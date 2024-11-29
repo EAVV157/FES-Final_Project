@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  
+}
+
 /* SMALL DESKTOPS, LAPTOPS */
 @media (max-width: 1280px) {
 }

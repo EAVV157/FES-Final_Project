@@ -22,84 +22,103 @@
   <body>
     <section id="landing">
       <nav>
-        <div class="row nav__row">
-
+        <div class="row nav__container">
+          <img
+            class="logo"
+            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+            alt=""
+          />
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a class="nav__link no-cursor">Blog</a></li>
+            <li><a href="#pricing" class="nav__link">Pricing</a></li>
+            <li><a class="nav__link no-cursor">Contact Us</a></li>
+            <li><a class="nav__link no-cursor">Login</a></li>
+            <li>
+              <a class="nav__link nav__link--primary no-cursor">Sign Up</a>
+            </li>
+          </ul>
+          <!-- Burger Menu Here -->
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="#pricing" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link nav__link--primary no-cursor" onclick="closeMenu()">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End of Burger Menu -->
         </div>
       </nav>
     </section>
+
     <main>
       <section id="features">
         <div class="container">
-          <div class="features__row">
-
-          </div>
+          <div class="features__row"></div>
         </div>
       </section>
       <section id="quality">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
       <section id="steps">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
       <section id="values">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
       <section id="pricing">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
       <section id="testimonials">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
       <section id="get__started">
         <div class="container">
-          <div class="row">
-            
-          </div>
+          <div class="row"></div>
         </div>
       </section>
     </main>
     <footer>
       <div class="row footer__row">
         <div class="footer__top">
-          <div class="footer__list">
-            
-          </div>
-          <div class="footer__list">
-            
-          </div>
-          <div class="footer__list">
-            
-          </div>
-          <div class="footer__list">
-            
-          </div>
-          <div class="footer__list">
-            
-          </div>
+          <div class="footer__list"></div>
+          <div class="footer__list"></div>
+          <div class="footer__list"></div>
+          <div class="footer__list"></div>
+          <div class="footer__list"></div>
         </div>
-        <div class="footer__bottom">
-          
-        </div>
+        <div class="footer__bottom"></div>
       </div>
     </footer>
   </body>
