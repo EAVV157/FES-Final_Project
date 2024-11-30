@@ -23,11 +23,14 @@
     <section id="landing">
       <nav>
         <div class="row nav__container">
-          <img
-            class="logo"
+          <div class="nav__container--logo">
+            <img
+            class="nav__logo"
             src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
             alt=""
           />
+          <div class="nav__logo--title"> Treact</div>
+          </div class="nav__list">
           <ul class="nav__links">
             <li><a href="#" class="nav__link">About</a></li>
             <li><a class="nav__link no-cursor">Blog</a></li>
@@ -46,26 +49,28 @@
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
               <i class="fa-solid fa-xmark"></i>
             </button>
-            <ul class="menu__links">
-              <li class="menu__list">
-                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
-              </li>
-              <li class="menu__list">
-                <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
-              </li>
-              <li class="menu__list">
-                <a href="#pricing" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
-              </li>
-              <li class="menu__list">
-                <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
-              </li>
-              <li class="menu__list">
-                <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
-              </li>
-              <li class="menu__list">
-                <a class="menu__link nav__link--primary no-cursor" onclick="closeMenu()">Sign Up</a>
-              </li>
-            </ul>
+            <div class="menu__list">
+              <ul class="menu__links">
+                <li class="menu__link">
+                  <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link nav__link--primary no-cursor" onclick="closeMenu()">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- End of Burger Menu -->
         </div>
@@ -74,7 +79,7 @@
     <header>
       <div class="container">
         <div class="row">
-          
+
         </div>
       </div>
     </header>

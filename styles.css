@@ -1,4 +1,4 @@
-/* Adding style before all the elements */
+/* Initial Styling */
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -10,8 +10,100 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding-top: 32px;
+  height: 80px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.no-cursor {
+  cursor: not-allowed;
+}
+
+/* NAV BAR */
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__container--logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 40px;
+}
+
+.nav__logo--title {
+  margin-left: 12px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.nav__link {
+  font-size: 14px;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.nav__link--primary {
+  margin: 2px 0  0;
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: #6415ff;
+  border: 2px solid #6415ff;
+  border-radius: 20px;
   
+}
+
+/* BURGER MENU */
+
+.btn__menu {
+  border-color: transparent;
+  font-size: 32px;
+  text-align: center;
+  border: none;
+  display: none;
+}
+
+.menu__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
