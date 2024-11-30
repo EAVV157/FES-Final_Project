@@ -18,6 +18,7 @@
       src="https://kit.fontawesome.com/fe84bccaa2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -25,62 +26,112 @@
         <div class="row nav__container">
           <div class="nav__container--logo">
             <img
-            class="nav__logo"
-            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-            alt=""
-          />
-          <div class="nav__logo--title"> Treact</div>
-          </div class="nav__list">
+              class="nav__logo"
+              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt=""
+            />
+            <div class="nav__logo--title">Treact</div>
+          </div>
           <ul class="nav__links">
-            <li><a href="#" class="nav__link">About</a></li>
-            <li><a class="nav__link no-cursor">Blog</a></li>
-            <li><a href="#pricing" class="nav__link">Pricing</a></li>
-            <li><a class="nav__link no-cursor">Contact Us</a></li>
-            <li><a class="nav__link no-cursor">Login</a></li>
+            <li>
+              <a
+                href="#"
+                class="nav__link link__hover-effect link__hover-effect--purple"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link link__hover-effect link__hover-effect--purple no-cursor"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="nav__link link__hover-effect link__hover-effect--purple"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link link__hover-effect link__hover-effect--purple no-cursor"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link link__hover-effect link__hover-effect--purple no-cursor"
+                >Login</a
+              >
+            </li>
             <li>
               <a class="nav__link nav__link--primary no-cursor">Sign Up</a>
             </li>
           </ul>
-          <!-- Burger Menu Here -->
           <button class="btn__menu" onclick="openMenu()">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="menu__backdrop">
-            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="menu__list">
-              <ul class="menu__links">
-                <li class="menu__link">
-                  <a href="#" class="menu__link" onclick="closeMenu()">About</a>
-                </li>
-                <li class="menu__link">
-                  <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-                </li>
-                <li class="menu__link">
-                  <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
-                </li>
-                <li class="menu__link">
-                  <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
-                </li>
-                <li class="menu__link">
-                  <a class="menu__link nav__link--primary no-cursor" onclick="closeMenu()">Sign Up</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End of Burger Menu -->
         </div>
       </nav>
+      <!-- Burger Menu -->
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="menu__list">
+          <ul class="menu__links">
+            <li class="menu__link">
+              <a
+                href="#"
+                class="menu__link link__hover-effect link__hover-effect--purple"
+                onclick="closeMenu()"
+                >About</a
+              >
+            </li>
+            <li class="menu__link">
+              <a
+                class="menu__link link__hover-effect link__hover-effect--purple no-cursor"
+                onclick="closeMenu()"
+                >Blog</a
+              >
+            </li>
+            <li class="menu__link">
+              <a
+                href="#pricing"
+                class="menu__link link__hover-effect link__hover-effect--purple"
+                onclick="closeMenu()"
+                >Pricing</a
+              >
+            </li>
+            <li class="menu__link">
+              <a
+                class="menu__link link__hover-effect link__hover-effect--purple no-cursor"
+                onclick="closeMenu()"
+                >Contact Us</a
+              >
+            </li>
+            <li class="menu__link">
+              <a
+                class="menu__link link__hover-effect link__hover-effect--purple no-cursor"
+                onclick="closeMenu()"
+                >Login</a
+              >
+            </li>
+            <li class="menu__link">
+              <a
+                class="menu__link menu__link--primary no-cursor"
+                onclick="closeMenu()"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <header>
       <div class="container">
-        <div class="row">
-
-        </div>
+        <div class="row"></div>
       </div>
     </header>
     <main>
