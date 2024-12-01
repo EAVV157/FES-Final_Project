@@ -10,6 +10,17 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 48px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 18px;
+  color: #808080;
+  margin: 32px 0;
+}
+
 a {
   text-decoration: none;
   position: relative;
@@ -23,9 +34,29 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
 nav {
   padding-top: 32px;
   height: 80px;
+}
+
+header {
+  position: relative;
+}
+
+.purple {
+  color: #6415ff;
 }
 
 .link__hover-effect:after {
@@ -49,6 +80,10 @@ nav {
 .link__hover-effect:hover:after {
   width: 100%;
   left: 0;
+}
+
+.container {
+  padding: 96px 0;
 }
 
 .row {
@@ -89,7 +124,7 @@ nav {
 }
 
 .nav__link {
-  color: #000000;
+  color: #404040;
   font-size: 14px;
   font-weight: 600;
   margin: 0 24px;
@@ -178,6 +213,95 @@ nav {
 .nav__link--primary:hover {
   color: #ffffff;
   background-color: #400ca7;
+}
+
+/* HEADER */
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__description {
+  width: 40%;
+}
+
+.header__description--para {
+  margin: 32px 0;
+}
+
+.header__email {
+  width: 100%;
+  max-width: 440px;
+  height: 72px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--input {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 80px;
+  border: 2px solid #E5E7EB;
+  padding: 20px 192px 20px 32px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border-color 300ms;
+}
+
+.header__email--input:hover {
+  border-color: #A0AEC0;
+}
+
+.header__email--input:focus,
+.header__email--input:active {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  border-color: #6415ff;
+}
+
+.header__email--btn {
+  width: 160px;
+  height: 75%;
+  background-color: #6415ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 80px;
+  border: none;
+  z-index: 2;
+  margin: 8px;
+  transition: background-color 300ms ease;
+}
+
+.header__email--btn:hover {
+  background-color: #400ca7;
+}
+
+.header__customer {
+  width: 100%;
+  font-size: 12px;
+  color: #808080;
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+.header__customer--img {
+  padding-right: 120px;
+  opacity: 0.6;
+}
+
+.header__img--wrapper {
+  width: 60%;
+}
+
+.header__img {
+  
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
