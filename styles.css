@@ -1,8 +1,9 @@
 /* Initial Styling */
 * {
-  font-family: "Roboto", sans-serif;
+  color: #243e63;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,12 +14,6 @@ html {
 h1 {
   font-size: 48px;
   color: #000000;
-}
-
-h2 {
-  font-size: 18px;
-  color: #808080;
-  margin: 32px 0;
 }
 
 a {
@@ -229,6 +224,7 @@ header {
 
 .header__description--para {
   margin: 32px 0;
+  line-height: 1.5;
 }
 
 .header__email {
@@ -245,7 +241,7 @@ header {
   width: 100%;
   font-size: 16px;
   border-radius: 80px;
-  border: 2px solid #E5E7EB;
+  border: 2px solid #e5e7eb;
   padding: 20px 192px 20px 32px;
   position: absolute;
   top: 0;
@@ -255,7 +251,7 @@ header {
 }
 
 .header__email--input:hover {
-  border-color: #A0AEC0;
+  border-color: #a0aec0;
 }
 
 .header__email--input:focus,
@@ -300,8 +296,97 @@ header {
   width: 60%;
 }
 
-.header__img {
-  
+/* MAIN REPEAT CSS */
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  font-weight: 700;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #243e63;
+  margin: 16px 0;
+}
+
+.section__para {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7c8ba1;
+  line-height: 1.5;
+}
+
+#features .section__title,
+#pricing .section__title {
+  text-align: center;
+}
+
+/* FEATURES */
+
+#features {
+  position: relative;
+}
+
+#features .container {
+  padding: 80px 0;
+}
+
+.features__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features .section__para {
+  text-align: center;
+  max-width: 544px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.feature {
+  width: calc(100%/3);
+}
+
+.feature__row {
+  display: flex;
+  align-items: flex-start;
+  padding: 32px 24px;
+}
+
+.feature__img--wrapper {
+  display: flex;
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 40px;
+}
+
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
+
+.feature__text {
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.feature__para {
+  color: #7c8ba1;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+  max-width: 211px;
+  line-height: 1.5;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
