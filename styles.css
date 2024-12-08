@@ -25,7 +25,7 @@ ul {
   display: flex;
 }
 
-li {
+nav li {
   list-style-type: none;
 }
 
@@ -308,7 +308,7 @@ header {
   width: 60%;
 }
 
-/* MAIN REPEAT CSS */
+/* SECTIONS MAIN REPEAT CSS */
 
 .section__tag {
   font-size: 16px;
@@ -371,7 +371,7 @@ header {
   display: flex;
   align-items: flex-start;
   padding: 32px 24px;
-  width: calc(100%/3);
+  width: calc(100% / 3);
 }
 
 .service__img--wrapper {
@@ -403,15 +403,18 @@ header {
   line-height: 1.5;
 }
 
-/* QUALITY */
+/* QUALITY & STEPS */
 
-#quality .row {
+#quality .row,
+#steps .row {
   display: flex;
   align-items: center;
 }
 
 .quality__description,
-.quality__img--wrapper {
+.quality__img--wrapper,
+.steps__img--wrapper,
+.steps__description {
   width: 50%;
 }
 
@@ -419,13 +422,42 @@ header {
   margin-top: 32px;
 }
 
-.quality__img--wrapper {
+.quality__img--wrapper,
+.steps__img--wrapper {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
   position: relative;
   margin: 0 56px;
+}
+
+.steps__description {
+  padding: 32px 0 32px 64px;
+}
+
+.steps__list {
+  list-style-type: decimal-leading-zero;
+  display: flex;
+  flex-direction: column;
+}
+
+.step::marker {
+  font-size: 32px;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 500px;
+  color: #243e63;
+}
+
+.step__para {
+  font-size: 14px;
+  font-weight: 400px;
+  color: #7c8ba1;
+  margin-top: 12px;
+  line-height: 2;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
