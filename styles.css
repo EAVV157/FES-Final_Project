@@ -13,7 +13,8 @@ html {
 
 h1 {
   font-size: 48px;
-  color: #000000;
+  font-weight: 700;
+  color: #243e63;
 }
 
 a {
@@ -25,7 +26,7 @@ ul {
   display: flex;
 }
 
-nav li {
+li {
   list-style-type: none;
 }
 
@@ -318,9 +319,6 @@ header {
 }
 
 .section__title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #243e63;
   margin: 16px 0;
   line-height: 1.25;
 }
@@ -403,10 +401,11 @@ header {
   line-height: 1.5;
 }
 
-/* QUALITY & STEPS */
+/* QUALITY, STEPS & VALUES */
 
 #quality .row,
-#steps .row {
+#steps .row,
+#values .row {
   display: flex;
   align-items: center;
 }
@@ -414,7 +413,9 @@ header {
 .quality__description,
 .quality__img--wrapper,
 .steps__img--wrapper,
-.steps__description {
+.steps__description,
+.values__description,
+.values__img--wrapper {
   width: 50%;
 }
 
@@ -422,28 +423,32 @@ header {
   margin-top: 32px;
 }
 
-.quality__img--wrapper,
-.steps__img--wrapper {
+.quality__img--wrapper {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
   position: relative;
   margin: 0 56px;
+  padding: 12px;
+}
+
+.step {
+  display: flex;
+  margin-top: 32px;
+}
+
+.step__number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
+  margin-right: 20px;
 }
 
 .steps__description {
-  padding: 32px 0 32px 64px;
-}
-
-.steps__list {
-  list-style-type: decimal-leading-zero;
   display: flex;
   flex-direction: column;
-}
-
-.step::marker {
-  font-size: 32px;
+  padding: 32px 0 32px 64px;
 }
 
 .step__title {
@@ -458,6 +463,37 @@ header {
   color: #7c8ba1;
   margin-top: 12px;
   line-height: 2;
+}
+
+.values__description {
+  flex-direction: column;
+}
+
+.value {
+  display: flex;
+}
+
+.value__list {
+  flex-direction: column;
+}
+
+.value__img--wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #9ae6b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__img {
+  font-size: 16px;
+  color: #276749;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
