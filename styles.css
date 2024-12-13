@@ -425,6 +425,7 @@ header {
 
 #quality .btn {
   margin-top: 32px;
+  cursor: not-allowed;
 }
 
 .quality__img--wrapper {
@@ -618,6 +619,7 @@ header {
   border-radius: 40px;
   padding: 16px 32px;
   transition: all 300ms;
+  cursor: not-allowed;
 }
 
 .plan__button:hover {
@@ -694,6 +696,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: not-allowed;
 }
 
 .testimonial__button i {
@@ -734,26 +737,27 @@ header {
   justify-content: flex-end;
 }
 
-.get__started__button {
+#get__started .btn {
   font-size: 16px;
   padding: 20px 40px;
   margin: 4px;
+  cursor: not-allowed;
 }
 
-.get__started__button:nth-child(1) {
-  background-color: #f56565;
+#get__started .btn:nth-child(1) {
+background-color: #f56565;
   margin-right: 24px;
 }
 
-.get__started__button:nth-child(1):hover {
+#get__started .btn:nth-child(1):hover {
   background-color: #f53939;
 }
 
-.get__started__button:nth-child(2) {
+#get__started .btn:nth-child(2) {
   border: 1px solid #a0aec0;
 }
 
-.get__started__button:nth-child(2):hover {
+#get__started .btn:nth-child(2):hover {
   color: #6415ff;
   background-color: #ffffff;
 }
