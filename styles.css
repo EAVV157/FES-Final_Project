@@ -19,6 +19,19 @@ h1 {
   line-height: 1.25;
 }
 
+h2 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
 h4 {
   font-size: 16px;
   color: #6415ff;
@@ -340,9 +353,6 @@ header {
 
 #services .row,
 #pricing .row {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -508,6 +518,105 @@ header {
 
 #values .btn {
   margin-top: 32px;
+}
+
+/* PRICING */
+
+.plans {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plan {
+  width: 30%;
+  margin-top: 64px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px #c0c0c080;
+  position: relative;
+  z-index: 5;
+}
+
+.plan:nth-child(odd) .plan__middle {
+  border-top: 2px solid #c0c0c080;
+  border-bottom: 2px solid #c0c0c080;
+}
+
+.plan:nth-child(2) .plan__middle {
+  border-top: 2px solid #7c81ec;
+  border-bottom: 2px solid #7c81ec;
+}
+
+.plan__top, .plan__middle, .plan__bottom {
+  width: 100%;
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+}
+
+.plan__bottom {
+  padding: 32px 96px;
+}
+
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+  color: #ffffff;
+  background: linear-gradient(115deg, #38B2AC 0%, #81E6D9 100%);
+}
+
+.plan:nth-child(2) {
+  background: linear-gradient(135deg, #4C51BF 0%, #6f74d1 100%);
+}
+
+.plan:nth-child(2) * {
+  color: #ffffff;
+}
+
+.plan:nth-child(2) .plan__button {
+  color: #6415ff;
+  background-color: #ffffff;
+}
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__button {
+  color: #ffffff;
+  background: linear-gradient(115deg, #F56565 0%, #FEB2B2 100%);
+}
+
+.plan__stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+.plan__duration{
+  margin: 8px 0;
+}
+
+.plan__feature {
+  margin-top: 16px;
+}
+
+.plan__button {
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 32px;
+  transition: all 300ms;
+}
+
+.plan__button:hover {
+  transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
