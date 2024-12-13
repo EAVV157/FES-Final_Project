@@ -702,9 +702,60 @@ header {
 }
 
 .divider {
-  background: #e5e7eb;
+  background-color: #e5e7eb;
   width: 1px;
   height: 24px;
+}
+
+/* GET STARTED */
+
+#get__started .row {
+  width: 100%;
+  max-width: 1024px;
+  padding: 64px 80px;
+  border-radius: 12px;
+  background-color: #6415FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get__started__title, .get__started__buttons {
+  width: 50%;
+}
+
+.get__started__title {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.get__started__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.get__started__button {
+  font-size: 16px;
+  padding: 20px 40px;
+  margin: 4px;
+}
+
+.get__started__button:nth-child(1) {
+  background-color: #f56565;
+  margin-right: 24px;
+}
+
+.get__started__button:nth-child(1):hover {
+  background-color: #f53939;
+}
+
+.get__started__button:nth-child(2) {
+  border: 1px solid #a0aec0;
+}
+
+.get__started__button:nth-child(2):hover {
+  color: #6415ff;
+  background-color: #ffffff;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
