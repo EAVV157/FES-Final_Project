@@ -39,6 +39,12 @@ h4 {
   letter-spacing: 1.5px;
 }
 
+h5 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 p {
   font-size: 16px;
   font-weight: 500;
@@ -87,7 +93,7 @@ header {
 .link__hover-effect:after {
   content: "";
   position: absolute;
-  height: 4px;
+  height: 2px;
   width: 0;
   bottom: -3px;
   right: 0;
@@ -425,7 +431,6 @@ header {
 
 #quality .btn {
   margin-top: 32px;
-  cursor: not-allowed;
 }
 
 .quality__img--wrapper {
@@ -619,7 +624,6 @@ header {
   border-radius: 40px;
   padding: 16px 32px;
   transition: all 300ms;
-  cursor: not-allowed;
 }
 
 .plan__button:hover {
@@ -696,7 +700,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: not-allowed;
 }
 
 .testimonial__button i {
@@ -741,7 +744,6 @@ header {
   font-size: 16px;
   padding: 20px 40px;
   margin: 4px;
-  cursor: not-allowed;
 }
 
 #get__started .btn:nth-child(1) {
@@ -760,6 +762,99 @@ background-color: #f56565;
 #get__started .btn:nth-child(2):hover {
   color: #6415ff;
   background-color: #ffffff;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 96px 32px;
+  background-color: #6415FF;
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__link--title {
+  color: #ffffff;
+}
+
+.footer__links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__link:first-of-type {
+  margin-top: 24px;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 12px;
+  cursor: not-allowed;
+}
+
+.footer__links:nth-child(1) .footer__link:last-child {
+  cursor: pointer;
+}
+
+.footer__links:nth-child(2) .footer__link {
+  cursor: pointer;
+}
+
+.footer__divider {
+  height: 2px;
+  width: 100%;
+  background-color: #742CFF;
+  margin: 64px 0;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo--wrapper {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__logo--title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 12px;
+}
+
+.footer__copyright {
+  color: #ffffff;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social--link {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 12px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* SMALL DESKTOPS, LAPTOPS */
