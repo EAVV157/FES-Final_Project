@@ -235,7 +235,7 @@ header {
 
 .menu__link {
   color: #000000;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 2;
   margin: 12px 0;
@@ -265,7 +265,7 @@ header {
 
 /* HEADER */
 
-.header__row {
+header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -373,6 +373,7 @@ header {
 .services {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -395,6 +396,11 @@ header {
 .service__img {
   width: 24px;
   height: 24px;
+}
+
+.service__title {
+  font-size: 24px;
+  color: #243e63;
 }
 
 .service__description {
@@ -540,6 +546,7 @@ header {
 
 .plan {
   width: 30%;
+  max-width: 384px;
   margin-top: 64px;
   border: 1px solid lightgray;
   border-radius: 16px;
@@ -720,13 +727,14 @@ header {
   max-width: 1024px;
   padding: 64px 80px;
   border-radius: 12px;
-  background-color: #6415FF;
+  background-color: #6415ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.get__started__title, .get__started__buttons {
+.get__started__title,
+.get__started__buttons {
   width: 50%;
 }
 
@@ -747,7 +755,7 @@ header {
 }
 
 #get__started .btn:nth-child(1) {
-background-color: #f56565;
+  background-color: #f56565;
   margin-right: 24px;
 }
 
@@ -768,7 +776,7 @@ background-color: #f56565;
 
 footer {
   padding: 96px 32px;
-  background-color: #6415FF;
+  background-color: #6415ff;
 }
 
 .footer__list {
@@ -809,7 +817,7 @@ footer {
 .footer__divider {
   height: 2px;
   width: 100%;
-  background-color: #742CFF;
+  background-color: #742cff;
   margin: 64px 0;
 }
 
@@ -859,9 +867,55 @@ footer {
 
 /* SMALL DESKTOPS, LAPTOPS */
 @media (max-width: 1280px) {
+  header,
+  main {
+    padding: 0 32px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 64px 0;
+  }
+
+  .header__description {
+    width: 50%;
+  }
+
+  .header__img--wrapper {
+    width: 50%;
+  }
 }
 /* SMALL LAPTOPS, LANDSCAPE TABLETS */
 @media (max-width: 1024px) {
+  header,
+  main {
+    padding: 0 24px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 96px 0;
+  }
+
+  #services .section__title,
+  #pricing .section__title {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
   .nav__links {
     display: none;
   }
@@ -869,16 +923,249 @@ footer {
   .btn__menu {
     display: block;
   }
+
+  header .row,
+  .header__description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+  }
+
+  .header__description {
+    text-align: center;
+  }
+
+  .header__customer--img {
+    padding-right: 0px;
+  }
+
+  .services {
+    max-width: 768px;
+  }
+
+  .service {
+    width: 50%;
+    padding: 32px;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .testimonials__img--wrapper {
+    width: 40%;
+  }
+
+  .testimonials__description {
+    width: 60%;
+  }
+
+  #get__started .row {
+    flex-direction: column;
+    text-align: center;
+    padding: 56px;
+  }
+
+  .get__started__title,
+  .get__started__buttons {
+    width: calc((100% / 3) * 2);
+  }
+
+  .get__started__title {
+    font-size: 32px;
+  }
+
+  .get__started__buttons {
+    justify-content: space-around;
+  }
+
+  footer {
+    padding: 64px 24px;
+  }
 }
 /* TABLETS, LANDSCAPE PHONES */
 @media (max-width: 768px) {
+  #services .section__para,
+  #pricing .section__para {
+    max-width: 530px;
+  }
+
+  .container {
+    padding: 64px 0;
+  }
+
+  .services {
+    justify-content: center;
+  }
+
+  .service {
+    width: auto;
+    max-width: 384px;
+  }
+
+  #quality .row,
+  #values .row {
+    flex-direction: column-reverse;
+  }
+
+  #steps .row,
+  #testimonials .row {
+    flex-direction: column;
+  }
+
+  .quality__description,
+  .quality__img--wrapper,
+  .steps__img--wrapper,
+  .steps__description,
+  .values__description,
+  .values__img--wrapper,
+  .testimonials__img--wrapper,
+  .testimonials__description {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .quality__description,
+  .steps__description,
+  .values__description,
+  .testimonials__description {
+    padding: 0;
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .values__list {
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .value__title {
+    align-self: center;
+  }
+
+  #get__started .row {
+    padding: 36px;
+  }
+
+  #get_started .btn {
+    font-size: 12px;
+    padding: 16px 32px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .footer__divider {
+    margin: 48px 0;
+  }
+
+  .footer__logo,
+  .footer__copyright,
+  .footer__socials {
+    padding: 16px;
+  }
 }
 /* PHONES, LANDSCAPE SMALL PHONES */
 @media (max-width: 640px) {
-}
-/* SMALL PHONES, LANDSCAPE TINY PHONES */
-@media (max-width: 480px) {
-}
-/* TINY PHONES */
-@media (max-width: 320px) {
+  .container {
+    padding: 48px 0;
+  }
+
+  .header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__email {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header__email--input {
+    position: relative;
+    padding: 16px 0;
+    padding-left: 32px;
+  }
+
+  .header__email--btn {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial__bottom {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+  }
+
+  .testimonial__profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__details {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .testimonial__buttons {
+    padding-top: 16px;
+  }
+
+  #get__started .row {
+    padding: 24px;
+  }
+
+  #get_started .btn {
+    font-size: 12px;
+    padding: 16px 32px;
+  }
+
+  .get__started__title,
+  .get__started__buttons {
+    width: 90%;
+  }
+
+  .get__started__title {
+    font-size: 24px;
+  }
+
+  .get__started__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #get__started .btn:nth-child(1) {
+    margin-right: 0;
+  }
+
+  #get__started .btn {
+    width: 40%;
+  }
 }
